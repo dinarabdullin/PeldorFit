@@ -1216,8 +1216,8 @@ void Enviroment::recordErrorProfile(vector<double> const& parameters, vector<int
 	ofstream file(filename.str().c_str());
 	if (file.is_open()) {
 		for (size_t i = 0; i < local_size; ++i) {
-			for (size_t j = 0; j < paramIndices.size(); ++j) {
-				if ((paramIndices[j] == 0) || (paramIndices[j] == 1) || (paramIndices[j] == 12) || (paramIndices[j] == 13) || (paramIndices[j] == 24) || (paramIndices[j] == 25) || (paramIndices[j] == 26))
+			for (size_t j = 0; j < variables.size(); ++j) {
+				if ((variables[j] == 0) || (variables[j] == 1) || (variables[j] == 12) || (variables[j] == 13) || (variables[j] >= 24))
 					file << setprecision(6) << setw(15) << local_population->chromosomes[i].genes[paramIndices[j]];
 				else
 					file << setprecision(6) << setw(15) << local_population->chromosomes[i].genes[paramIndices[j]] * 180/PI;
