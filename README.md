@@ -8,7 +8,7 @@ The program PeldorFit performs analysis of the orientation-selective Pulsed ELec
 
 3) correlation between individual geometric parameters of the model is neglected.
 
-The geometry of the model is optimized via genetic algprithm provide the best match between experimental PELDOR signals and the corresponding PELDOR signals simulated for the model.  
+The geometry of the model is optimized via genetic algorithm provide the best match between experimental PELDOR signals and the corresponding PELDOR signals simulated for the model.  
 
 Further description of the program can be found in the manual and in the paper (see below).
 
