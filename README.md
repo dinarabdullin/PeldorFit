@@ -1,22 +1,12 @@
 PeldorFit
 =========
-The program PeldorFit performs an analysis of the orientation-selective Pulsed ELectron-electron Double Resonance (PELDOR or DEER) signals. The orientation-selective PELDOR signals contain information about the distance between two spin centers in an ensemble of identical molecules and about the relative orientations of these centers. To extract this information, the program uses a simplified model of a spin pair for which several assumptions are taken:
-
-1) spins are considered as single-point objects;
-
-2) geometric parameters of the model have either normal or uniform distribution; 
-
-3) correlation between individual geometric parameters of the model is neglected.
-
-The geometry of the model is optimized via genetic algorithm provide the best match between experimental PELDOR signals and the corresponding PELDOR signals simulated for the model.  
+A program PeldorFit is developed for the analysis of orientation-selective PELDOR (or alterntively DEER) data. This data encodes information about the inter-spin distance distribution and the relative orientation of spin centers in a certain spin pair. To extract this information, PeldorFit uses a simplified geometric model of the spin pair. This model is optimized via genetic algorithm until the PELDOR signals that are simulated for the model provide the best fit to the experimental PELDOR signals.
 
 Further description of the program can be found in the manual and in the paper (see below).
 
 General Information
 =========
-The source code of the program PeldorFit is written using C++. The program uses two external open-access libraries, Intel TBB (https://www.threadingbuildingblocks.org/) and libconfig (http://www.hyperrealm.com/libconfig/). Both of them are required for compiling the program.
-
-The compiled executables of the program for the Linux and Windows operating systems are gathered in the archive PeldorFit.zip.
+The source code of the PeldorFit program is written in C++. The program uses two external open-access libraries, Intel TBB (https://www.threadingbuildingblocks.org/) and libconfig (http://www.hyperrealm.com/libconfig/). Both libraries are required for compiling the program. The program was already compiled for Linux and Windows, the corresponding executables are provided.
 
 Copyright
 =========
