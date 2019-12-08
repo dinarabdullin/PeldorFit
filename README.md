@@ -1,12 +1,14 @@
 PeldorFit
 =========
-A program PeldorFit is developed for the analysis of orientation-selective PELDOR (or alterntively DEER) data. This data encodes information about the inter-spin distance distribution and the relative orientation of spin centers in a certain spin pair. To extract this information, PeldorFit uses a simplified geometric model of the spin pair. This model is optimized via genetic algorithm until the PELDOR signals that are simulated for the model provide the best fit to the experimental PELDOR signals.
+A program PeldorFit is developed for analysis of orientation-selective Pulsed ELectron-electron Double Resonance (PELDOR or DEER) data.
 
 Further description of the program can be found in the manual and in the paper (see below).
 
 General Information
 =========
-The source code of the PeldorFit program is written in C++. The program uses two external open-access libraries, Intel TBB (https://www.threadingbuildingblocks.org/) and libconfig (http://www.hyperrealm.com/libconfig/). Both libraries are required for compiling the program. The program was already compiled for Linux and Windows, the corresponding executables are provided.
+The source code of the PeldorFit program is written in C++. The program uses two external open-access libraries, Intel TBB (https://www.threadingbuildingblocks.org/) and libconfig (http://www.hyperrealm.com/libconfig/). 
+
+The program was already compiled for Linux and Windows, the corresponding executables are stored at https://github.com/dinarabdullin/PeldorFit/releases
 
 Copyright
 =========
